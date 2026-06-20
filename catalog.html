@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Flora Express - Catalog</title>
+
+    <meta name="description" content="Catalog de buchete și aranjamente florale Flora Express.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top shadow">
+        <div class="container">
+
+
+            <a class="navbar-brand fw-bold" href="index.html">Flora Express</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Despre noi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="delivery.html">Livrare</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="catalog-header">
+    <img src="./img/hero/1.1.jpg" alt="Flori" class="catalog-img">
+
+    <div class="catalog-text">
+        <h1>Catalog de produse</h1>
+        <p>Alege buchetul perfect pentru orice ocazie</p>
+    </div>
+</header>
+
+    <section class="py-3">
+        <div class="container d-flex flex-wrap gap-2 justify-content-between">
+
+
+            <div>
+                <button class="btn btn-success filter-btn" data-category="all">Toate</button>
+                <button class="btn btn-outline-success filter-btn" data-category="buchet">Buchete</button>
+                <button class="btn btn-outline-success filter-btn" data-category="aranjament">Aranjamente</button>
+                <button class="btn btn-outline-success filter-btn" data-category="planta">Plante</button>
+            </div>
+
+            <select id="sortPrice" class="form-select w-auto">
+                <option value="asc">Preț crescător</option>
+                <option value="desc">Preț descrescător</option>
+            </select>
+        </div>
+
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <div class="row g-4" id="productList">
+
+                <div class="col-md-4 product" data-category="buchet" data-price="450">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/1.jpg" class="card-img-top" alt="Buchet Romantic"
+                            style="object-position: center 35%;">
+                        <div class="card-body text-center">
+                            <h5>Buchet Romantic</h5>
+                            <p class="text-success fw-bold">450 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="buchet" data-price="550">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/11.jpg" alt="Buchet Elegant">
+                        <div class="card-body text-center">
+                            <h5>Buchet Elegant</h5>
+                            <p class="text-success fw-bold">550 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="buchet" data-price="650">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/3.jpg" class="card-img-top" alt="Buchet Premium"
+                            style="object-position: center 45%;">
+                        <div class="card-body text-center">
+                            <h5>Buchet Premium</h5>
+                            <p class="text-success fw-bold">650 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="aranjament" data-price="400">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/4.jpg" class="card-img-top" alt="Aranjament Floral"
+                            style="object-position: center 60%;">
+                        <div class="card-body text-center">
+                            <h5>Aranjament Floral</h5>
+                            <p class="text-success fw-bold">400 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="planta" data-price="300">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/5.jpg" class="card-img-top" alt="Plantă decorativă">
+                        <div class="card-body text-center">
+                            <h5>Plantă Decorativă</h5>
+                            <p class="text-success fw-bold">300 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="buchet" data-price="500">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/6.jpg" class="card-img-top" alt="Buchet Deluxe">
+                        <div class="card-body text-center">
+                            <h5>Buchet Deluxe</h5>
+                            <p class="text-success fw-bold">500 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="aranjament" data-price="420">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/7.jpg" class="card-img-top" alt="Aranjament Elegant">
+                        <div class="card-body text-center">
+                            <h5>Aranjament Elegant</h5>
+                            <p class="text-success fw-bold">420 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="planta" data-price="250">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/8.jpg" class="card-img-top" alt="Plantă Verde">
+                        <div class="card-body text-center">
+                            <h5>Plantă Verde</h5>
+                            <p class="text-success fw-bold">250 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="ocazie" data-price="700">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/1.3.jpg" class="card-img-top" alt="Buchet Nuntă"
+                            style="object-position: center 80%;">
+                        <div class="card-body text-center">
+                            <h5>Buchet Nuntă</h5>
+                            <p class="text-success fw-bold">700 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="ocazie" data-price="600">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/1.5.jpg" class="card-img-top" alt="Buchet Aniversare"
+                            style="object-position: center 70%;">
+                        <div class="card-body text-center">
+                            <h5>Buchet Aniversare</h5>
+                            <p class="text-success fw-bold">500 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="aranjament" data-price="380">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/1.4.jpg" class="card-img-top" alt="101 trandafiri"
+                            style="object-position: center 60%;">
+                        <div class="card-body text-center">
+                            <h5>101 trandafiri</h5>
+                            <p class="text-success fw-bold">1200 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 product" data-category="planta" data-price="320">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./img/catalog/1.2.jpg" class="card-img-top" alt="Buchet elegant"
+                            style="object-position: center 15%;">
+                        <div class="card-body text-center">
+                            <h5>Buchet elegant</h5>
+                            <p class="text-success fw-bold">320 MDL</p>
+                            <button class="btn btn-success add-cart">Adaugă în coș</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/catalog.js"></script>
+
+</body>
+
+</html>
