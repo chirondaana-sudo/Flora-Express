@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Flora Express - Catalog</title>
 
     <meta name="description" content="Catalog de buchete și aranjamente florale Flora Express.">
@@ -21,7 +20,6 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-
 </head>
 
 <body>
@@ -30,7 +28,10 @@
         <div class="container">
 
 
-            <a class="navbar-brand fw-bold" href="index.html">Flora Express</a>
+           <a href="index.html" class="logo">
+    <img src="./img/hero/logo1.png" alt="Flora Express">
+    <span class="logo-title">Flora Express</span>
+</a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                 <span class="navbar-toggler-icon"></span>
@@ -68,18 +69,10 @@
 
 
             <div>
-                <button class="btn btn-success category-btn active" data-category="all">
-                    Toate
-                </button>
-                <button class="btn btn-outline-success category-btn" data-category="buchet">
-                    Buchete
-                </button>
-                <button class="btn btn-outline-success category-btn" data-category="aranjament">
-                    Aranjamente
-                </button>
-                <button class="btn btn-outline-success category-btn" data-category="planta">
-                    Plante
-                </button>
+                <button class="category-btn" data-category="all">Toate</button>
+<button class="category-btn" data-category="buchet">Buchete</button>
+<button class="category-btn" data-category="aranjament">Aranjamente</button>
+<button class="category-btn" data-category="planta">Plante</button>
             </div>
             <select id="sortPrice" class="form-select w-auto">
                 <option value="asc">Preț crescător</option>
@@ -93,13 +86,13 @@
         <div class="container">
             <div class="row g-4" id="productList">
 
-                <div class="col-md-4 product" data-category="buchet" data-price="450">
+                <div class="col-md-4 product" data-category="buchet" data-price="250">
                     <div class="card h-100 shadow-sm">
                         <img src="./img/catalog/1.jpg" class="card-img-top" alt="Buchet Romantic"
                             style="object-position: center 35%;">
                         <div class="card-body text-center">
                             <h5>Buchet Romantic</h5>
-                            <p class="text-success fw-bold">450 MDL</p>
+                            <p class="text-success fw-bold">250 MDL</p>
                             <button class="btn btn-success add-cart">Adaugă în coș</button>
                         </div>
                     </div>
@@ -116,13 +109,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 product" data-category="buchet" data-price="650">
+                <div class="col-md-4 product" data-category="buchet" data-price="350">
                     <div class="card h-100 shadow-sm">
-                        <img src="./img/catalog/3.jpg" class="card-img-top" alt="Buchet Premium"
+                        <img src="./img/catalog/3.jpg" class="card-img-top" alt="Buchet Delicat"
                             style="object-position: center 45%;">
                         <div class="card-body text-center">
-                            <h5>Buchet Premium</h5>
-                            <p class="text-success fw-bold">650 MDL</p>
+                            <h5>Buchet Delicat</h5>
+                            <p class="text-success fw-bold">350 MDL</p>
                             <button class="btn btn-success add-cart">Adaugă în coș</button>
                         </div>
                     </div>
@@ -208,7 +201,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 product" data-category="aranjament" data-price="380">
+                <div class="col-md-4 product" data-category="aranjament" data-price="1200">
                     <div class="card h-100 shadow-sm">
                         <img src="./img/catalog/1.4.jpg" class="card-img-top" alt="101 trandafiri"
                             style="object-position: center 60%;">
@@ -236,11 +229,8 @@
             </div>
         </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/main.js"></script>
-
     <script src="js/catalog.js"></script>
 
 </body>
